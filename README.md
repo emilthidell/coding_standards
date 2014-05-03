@@ -30,14 +30,20 @@ In a project, there should be only one spoken language. Everything should be wri
 __variables:__  
 `$variableName`
 
-__functions:__  
-`public function MyFunction() {`
-
 __classes:__  
 `class MyClass {`
 
-__file names:__  
-`MyClassFile.php`
+__functions:__  
+`public function myFunction() {`
+
+__static functions:__  
+`public static function MyFunction() {`
+
+__file names (which contains a class):__  
+`MyClass.php`
+
+__files names:__  
+`my_file.php`
 
 __folders:__  
 `my_folder`
@@ -146,7 +152,16 @@ Visible and uneditable for all outside classes.
 
 __const__:  
 Visible and uneditable for all outside classes.  
-`const MYVAR = 'My value';`
+`const MY_VAR = 'My value';`
+
+The constants can be accessed like this:
+```
+// inside its own class
+self::MY_VAR
+
+// outside its own class
+SomeClass::MY_VAR
+```
 
 __static__:  
 Statics visibility can be controlled by public and private.  
@@ -183,7 +198,7 @@ return 0;
 return "";
 ```
 
-__Do not__ return a value (_like false_) if something went wrong. It's better to throw an exception in that scenario.
+Do not return a value like (_false_) if something went wrong. It's better to throw an exception in that scenario.
 ```
 throw new Exception('Error message');
 ```
