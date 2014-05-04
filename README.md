@@ -37,7 +37,7 @@ __functions:__
 `public function myFunction() {`
 
 __static functions:__  
-`public static function MyFunction() {`
+`public static function myFunction() {`
 
 __file names (which contains a class):__  
 `MyClass.php`
@@ -54,11 +54,11 @@ Each row may be up to 150 characters long. This includes spaces.
 This is a recommended way of structuring arrays which many values and keys.
 ```
 $someArray = array(
-                'one' => 1,
-                'two' => 2,
-                'three' => 3,
-                'four' => 4,
-                'five' => 5
+    'one' => 1,
+    'two' => 2,
+    'three' => 3,
+    'four' => 4,
+    'five' => 5
 );
 ```
 
