@@ -85,11 +85,9 @@ In some short statements it's possible to exclude the curly brackets, but __don'
 ```
 if (...) {
   
-}
-else if (...) {
+} else if (...) {
   
-}
-else {
+} else {
   
 }
 ```
@@ -188,7 +186,7 @@ public function __destruct() {
 ## Functions/Methods
 It's highly recommended to use strong typing in functions. This reduces the risk of someone using the function incorrectly.
 ```
-private function Signup(Member $member) {
+private function signup(Member $member) {
 ```
 
 A function or method should always have only one return type. If a function expects an array, then return an empty array if there was no result.
