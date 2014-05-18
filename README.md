@@ -113,11 +113,11 @@ while (...) {
 ```
 /**
 * Some description of the function.
-* @param   string  $var1
-* @param   bool    $var2  some description
-* @param   int     $var3
-* @param   array   $var4
-* @throws  some description
+* @param   string     $var1
+* @param   bool       $var2  some description
+* @param   int        $var3
+* @param   array      $var4
+* @throws  Exception  some description
 * @return  void
 * @todo    do some more stuff
 */
